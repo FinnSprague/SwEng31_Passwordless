@@ -1,0 +1,32 @@
+.dashboard .side-bar{
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+    text-transform: uppercase;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 210px;
+    background: #1c274e;
+    color: #f4f6fc;
+}
+
+.dashboard .side-bar span button{
+    color: #f4f6fc;
+}
+
+.overview-btn{
+    margin-top: 60%;
+}
+
+.dashboard .side-bar span button:hover, .dashboard .close-sidebar-btn:hover{
+    background: #364d77;
+}
+
+.dashboard .close-sidebar-btn{
+    width: 25px;
+    margin-left: 170px;
+}

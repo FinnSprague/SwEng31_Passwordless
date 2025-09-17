@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwordless</title>
+</head>
+<body>
+  <button id="logout-btn">Log out</button>
+
+  <h2>Create Appointment</h2>
+
+  <form id="appointment-form">
+    <label for="patientId">Patient ID</label>
+    <input type="text" id="patientId" name="patientId" required>
+
+    <label for="doctorId">Doctor ID</label>
+    <input type="text" id="doctorId" name="doctorId" required>
+
+    <label for="date">Date</label>
+    <input type="date" id="appointment-date" name="date" required>
+
+    <label for="time">Time</label>
+    <input type="time" id="appointment-time" name="time" required>
+
+    <label for="reason">Reason</label>
+    <textarea id="appointment-reason" name="reason" rows="4" required></textarea>
+
+    <button type="button" id="create-appointment">Create Appointment</button>
+  </form>
+
+  <h2>Scheduled Appointments:</h2>
+  <table id="appointments-table" border="1">
+    <thead>
+      <tr>
+        <th>Doctor</th>
+        <th>Patient</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody id="appointments-body"></tbody>
+  </table>
+
+  <script src="" async defer></script>
+	<script type="module" src="/appointment.js">
+	</script>
+</body>
+</html>

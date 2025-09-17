@@ -1,0 +1,329 @@
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f4f7fc;
+    min-height: 100vh;
+}
+
+.dashboard-content-margin{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f4f7fc;
+    min-height: 100vh;
+    margin-left: 250px;
+}
+
+.banner {
+    background: linear-gradient(135deg, #3F51B5, #1E3A8A);
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.banner:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.banner.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.settings-btn-patient:hover {
+    background: #2b6cb0;
+}
+
+.patient-overview-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.patient-overview-card {
+    background-color: white;
+    color: #2d3748;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    line-height: 2;
+}
+
+.patient-overview-card h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 16px;
+}
+
+.patient-overview-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.patient-overview-card li {
+    font-size: 16px;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.other-sections-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.health-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.health-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.health-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.health-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.health-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+.health-card p {
+    font-size: 16px;
+    color: #4a5568;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.notifications {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+}
+
+.notifications h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 16px;
+}
+
+.notifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notifications li {
+    background-color: #f7fafc;
+    /*background-color: #ebf8ff;*/
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.notifications li .notif-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.notifications li .notif-date {
+    font-size: 14px;
+    color: #718096;
+}
+
+.notifications li p {
+    font-size: 16px;
+    color: #2d3748;
+}
+
+/**/
+.appointment-timeline {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.appointment-timeline h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 16px;
+}
+
+.appointment-timeline ul {
+    list-style: none;
+    padding: 0;
+}
+
+.appointment-item {
+    background-color: #f7fafc;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appointment-date, .appointment-doctor {
+    font-size: 16px;
+    color: #2d3748;
+}
+
+.appointment-status {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.appointment-status.completed {
+    background-color: #e6fffa;
+    color: #319795;
+}
+
+.appointment-status.upcoming {
+    background-color: #ebf8ff;
+    color: #3182ce;
+}
+
+.appointment-status.scheduled{
+    background-color: #faf5ff;
+    color: #805ad5;
+}
+
+/*Test Results*/
+.test-results {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.test-results h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 16px;
+}
+
+.test-results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.test-results li {
+    background-color: #f7fafc;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.test-date {
+    font-size: 14px;
+    color: #718096;
+}
+
+.test-status {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.test-status.normal {
+    background-color: #e6fffa;
+    color: #319795;
+}
+
+.test-status.abnormal {
+    background-color: #fff5f5;
+    color: #e53e3e;
+}
+
+.test-status.pending {
+    background-color: #ebf8ff;
+    color: #3182ce;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

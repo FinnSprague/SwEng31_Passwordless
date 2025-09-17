@@ -1,0 +1,90 @@
+.patient-dashboard .side-bar{
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+    text-transform: uppercase;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 0px;
+    width: 210px;
+    background: #3182ce;
+    color: #f4f6fc;
+}
+
+.patient-dashboard .side-bar span button{
+    color: white;
+    display: flex; 
+    align-items: center; 
+    border: none;
+    border-radius: 0px;
+    padding: 5px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+.overview-btn{
+    margin-top: 60%;
+}
+
+.side-patient-btn{
+   background-color: transparent;
+}
+
+.patient-dashboard .side-bar span .current{
+    background: #2b6cb0;
+    border-right: 4px solid #26508b;
+}
+
+.patient-dashboard .side-bar span button:hover, .close-sidebar-patient-btn:hover, 
+.open-sidebar-patient-btn:hover{
+    background: #2b6cb0;
+}
+
+.open-sidebar-patient{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: #3182ce;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    z-index: 1000;
+}
+
+.open-sidebar-patient-btn{
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    margin-left: 20px;
+    top: 0;
+    height: 45px;
+    cursor: pointer;
+}
+
+.open-sidebar-patient-btn img{
+    width: 45px; 
+    height: 45px;
+}
+
+.close-sidebar-patient-btn{
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    margin-left: 180px;
+    width: 25px;
+    margin-top: 5px;
+    height: 25px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.close-sidebar-patient-btn img{
+    width: 25px; 
+    height: 25px;
+}

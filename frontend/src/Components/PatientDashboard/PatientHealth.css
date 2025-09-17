@@ -1,0 +1,61 @@
+.health-summary {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.health-summary h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+
+.section {
+    background-color: #f1f5f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    width: 48%;
+    font-size: 16px;
+    color: #4a5568;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    font-size: 16px;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+li strong {
+    font-weight: 600;
+}
+
+.medication-item, .allergy-item {
+    font-size: 16px;
+    color: #4a5568;
+}
+
+.visit-info p {
+    font-size: 16px;
+    color: #4a5568;
+}
+
+.visit-info p strong {
+    font-weight: 600;
+}
